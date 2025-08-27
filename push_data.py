@@ -61,7 +61,7 @@ class NetworkDataExtract():
 if __name__=="__main__":
     FILE_PATH="Netwrok_Data\phisingData.csv"
     DATABASE="Mudaseer"
-    Collection="NetworkData"
+    Collection="NetworkSecurity"
     networKobj=NetworkDataExtract()
     records=networKobj.csv_to_json_convertor(file_path=FILE_PATH)
     no_of_records=networKobj.insert_data_mongodb(records=records,database=DATABASE,collection=Collection)
